@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap');
+:root {
+    --backgroundColor: white;
+    --mainColor: rgb(212, 227, 255)
+}
+
+#bigBox {
+    width: 210mm;
+    height: 297mm;
+    margin: auto;
+    padding: 1em;
+    border: solid 2px darkgray;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    border-radius: 5px;
+}
+
+hr.new {
+    border: 3px solid var(--mainColor);
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+}
+
+.myGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px 450px);
+    grid-gap: 10px;
+}
+
+#cv h4 {
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    font-style: bold;
+    color: rgb(88, 88, 88);
+}
+
+#cv li {
+    list-style-image: url('imagem/listIcon.svg');
+    text-align:justify;
+}
+
+#cv .w3-half{
+  padding-right:35px;
+}
+
+#cv {
+    margin:15px;
+}
+
+.gridItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header {
+    padding-top: 5em;
+}
+
+img {
+    max-width: 500px;
+}
+
+#pfpContainer {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+}
+
+#titleInfoContainer {
+    width: 400px;
+}
+
+#roundSquare {
+    width: 300px;
+    height: 150px;
+    background-color: var(--mainColor);
+    border-radius: 0% 2rem 2rem;
+    position: absolute;
+}
+
+#pfp {
+    margin-left: 50px;
+    width: 200px;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 9px solid var(--mainColor);
+    outline: 9px solid var(--backgroundColor);
+    outline-offset: -1px;
+    position: relative;
+}
+
+#title {
+    width: 300px;
+    font-weight: 700;
+    font-size: 2.2em;
+    font-family: 'Dosis', sans-serif;
+    font-style: bold;
+    color: rgb(88, 88, 88);
+}
+
+#titleInfoContainer p {
+    margin: 0px;
+    padding-left: 20px;
+}
+
+#summary {
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+    font-style: bold;
+    background-color: var(--mainColor);
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.normalText {
+    font-family: 'Arial', sans-serif;
+    font-style: bold;
+    color: rgb(88, 88, 88);
+}
+
+.tinyText {
+    font-family: 'Calibri', sans-serif;
+    font-size: 11px;
+    font-style: bold;
+    color: gray;
+}
+
+#infoDiv {
+    width: 200px;
+}
+
+#info {
+    font-family: 'Calibri', sans-serif;
+    font-size: 12px;
+    font-style: bold;
+    color: gray;
+    border-left: 2px solid darkgray;
+    border-left-style: dashed;
+    display: inline-block;
+    text-align: right;
+}
