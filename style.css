@@ -5,14 +5,20 @@
 }
 
 #bigBox {
-    width: 210mm;
-    height: 297mm;
+    max-width: 210mm;
+    max-height: 297mm;
     margin: auto;
-    padding: 1em;
+    padding: 16px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     border: solid 2px darkgray;
-    margin-top: 3em;
-    margin-bottom: 3em;
     border-radius: 5px;
+    overflow: auto;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 hr.new {
@@ -28,6 +34,21 @@ hr.new {
     grid-gap: 10px;
 }
 
+@media only screen and (max-width: 750px) {
+    .myGrid {
+        display: grid;
+        grid-template-columns: 0.5fr;
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    #title {
+        max-width: 400px;
+    }
+    #pfpContainer {
+        margin: auto;
+    }
+}
+
 #cv h4 {
     font-weight: 500;
     font-family: 'Dosis', sans-serif;
@@ -36,22 +57,17 @@ hr.new {
 }
 
 #cv li {
-    list-style-image: url('imagem/listIcon.svg');
-    text-align:justify;
-}
-
-#cv .w3-half{
-  padding-right:35px;
+    text-align: justify;
 }
 
 #cv {
-    margin:15px;
+    margin: 15px;
 }
 
 .gridItem {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 #header {
@@ -63,10 +79,7 @@ img {
 }
 
 #pfpContainer {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    min-width: 300px;
     position: relative;
 }
 
@@ -93,8 +106,8 @@ img {
     position: relative;
 }
 
-#title {
-    width: 300px;
+#name {
+    overflow-wrap: break-word;
     font-weight: 700;
     font-size: 2.2em;
     font-family: 'Dosis', sans-serif;
